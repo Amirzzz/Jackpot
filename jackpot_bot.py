@@ -53,7 +53,7 @@ def echo_all(updates):
             text = update['message']['text']
             chat = update['message']['chat']['id']
             send_message(text, chat)
-        except Exception, e:
+        except Exception as e:
             print e
 
 
